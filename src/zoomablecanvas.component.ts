@@ -51,7 +51,7 @@ export class ZoomableCanvasComponent implements AfterViewInit {
 
     ngAfterViewInit() {
         // Timeout is to avoid a "changed after it was checked" error
-        setTimeout(() => this.initialize());
+        setTimeout(() => this.initialize(), 2000);
     }
 
     private initialize() {
